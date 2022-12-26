@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 50vw;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.display {
+  background-color: rgb(133, 134, 147);
+  grid-column: 1 / 5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3rem;
+}
+
+.zero {
+  grid-column: 1 / 3;
+  background-color: gray;
+}
+
+.plus,
+.cross,
+.minus,
+.equal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 145, 63);
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.numbers,
+.ac,
+.percent,
+.zero,
+.period,
+.plus-minus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(224, 224, 224);
+  border: 1px solid rgb(190, 190, 190);
+}
+
+button:active {
+  background-color: rgb(87, 66, 66);
+}
+
+.calc {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.pcalc {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
